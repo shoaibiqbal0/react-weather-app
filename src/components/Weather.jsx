@@ -6,12 +6,6 @@ const Weather = ({ weatherData }) => {
     <Flex justify="center">
       <VStack>
         <HStack>
-          <Image
-            boxSize={["60px", "60px", "80px"]}
-            borderRadius="full"
-            objectFit="cover"
-            src={`https://flagcdn.com/w160/${country}.webp`}
-          />
           <Text
             bgGradient="linear(to-r, gray.100, gray.200, gray.300)"
             bgClip="text"
@@ -21,6 +15,7 @@ const Weather = ({ weatherData }) => {
           >
             {weatherData.name}
           </Text>
+          <Image w="36px" src={`https://flagcdn.com/36x27/${country}.webp`} />
         </HStack>
         <HStack>
           <VStack p="5" spacing="10">
