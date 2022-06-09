@@ -8,6 +8,7 @@ const Search = (props) => {
   return (
     <Flex justify="center" p="10">
       <Input
+        variant="filled"
         maxW="500px"
         borderRadius="full"
         value={props.location}
