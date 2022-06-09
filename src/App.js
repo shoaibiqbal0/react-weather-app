@@ -1,3 +1,4 @@
+import { Flex, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import Search from "./components/Search";
 import Weather from "./components/Weather";
@@ -29,7 +30,9 @@ function App() {
         getWeatherData={getWeatherData}
       />
       {typeof weatherData.main === "undefined" ? (
-        <div></div>
+        <Flex justify="center">
+          <Text fontSize="3xl">Enter a city name.</Text>
+        </Flex>
       ) : (
         <Weather weatherData={weatherData} />
       )}

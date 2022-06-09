@@ -9,7 +9,7 @@ const Search = (props) => {
     <Flex justify="center" p="10">
       <Input
         maxW="500px"
-        borderRadius="20"
+        borderRadius="full"
         value={props.location}
         onChange={handleChange}
         onKeyDown={props.getWeatherData}
