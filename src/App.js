@@ -5,6 +5,7 @@ import Weather from "./components/Weather";
 import Clear from "./assets/clear.jpg";
 import Clouds from "./assets/cloudy.jpg";
 import Rain from "./assets/rain.jpg";
+import Haze from "./assets/haze.jpg";
 import Thunderstorm from "./assets/thunderstorm.jpg";
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
               break;
             case "Thunderstorm":
               setWeatherImage(Thunderstorm);
+              break;
+            case "Haze":
+              setWeatherImage(Haze);
               break;
             default:
               setWeatherImage(Clear);
