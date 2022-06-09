@@ -8,11 +8,12 @@ const Search = (props) => {
   return (
     <Flex justify="center" p="10">
       <Input
-        maxW="1000px"
+        maxW="500px"
         borderRadius="20"
         value={props.location}
         onChange={handleChange}
         onKeyDown={props.getWeatherData}
+        placeholder="Enter a city name.."
       />
     </Flex>
   );
