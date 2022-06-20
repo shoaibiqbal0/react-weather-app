@@ -9,7 +9,7 @@ const Search = (props) => {
     <Flex justify="center" p="10">
       <Input
         maxW="500px"
-        bg="white"
+        color="white"
         borderRadius="full"
         value={props.location}
         onChange={handleChange}
