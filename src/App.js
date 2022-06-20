@@ -59,6 +59,7 @@ function App() {
               setWeatherImage(Clear);
           }
           setLocation("");
+          event.target.blur();
         });
     }
   };
