@@ -12,7 +12,7 @@ const Weather = ({ weatherData }) => {
   return (
     <Flex justify="center">
       <VStack
-        bgColor="gray.800"
+        bgGradient="linear(to-b, gray.700, gray.800, gray.900)"
         px="5"
         borderRadius="10"
         divider={<StackDivider borderColor="gray.700" />}
